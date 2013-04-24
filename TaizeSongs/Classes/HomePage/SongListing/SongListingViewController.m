@@ -98,6 +98,8 @@
   
   //configure the cell
   cell.textLabel.text = [self.songListingPageEntries objectAtIndex:indexPath.row];
+  cell.imageView.image = [UIImage imageNamed:@"taize_cross_red.png"];
+  
   cell.textLabel.numberOfLines = 0;
   return cell;
 }

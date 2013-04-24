@@ -788,6 +788,7 @@
   
   //configure the cell
   cell.textLabel.text = [self.songEntries objectAtIndex:indexPath.row];
+  
   cell.textLabel.numberOfLines = 0;
   return cell;
 }

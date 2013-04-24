@@ -15,6 +15,8 @@
 @implementation HomePageViewController
 
 @synthesize homePageEntries;
+@synthesize homePageIcons;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,6 +27,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
   NSLog(@"Taize Songs - Home Page View");
@@ -34,9 +37,15 @@
                                     , @"About"
                                     , nil];
   
+  homePageIcons = [[NSArray alloc]
+                   initWithObjects: @"songsheet_icon.png"
+                                  , @"dungeon_icon.png"
+                                  , nil];
+  
   [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -71,6 +80,9 @@
   
   //configure the cell
   cell.textLabel.text = [self.homePageEntries objectAtIndex:indexPath.row];
+  cell.imageView.image = [UIImage imageNamed:@"taize_cross_yellow.png"];
+  //cell.imageView.image = [UIImage imageNamed:(NSString *)[self.homePageIcons objectAtIndex:indexPath.row]];
+  
   cell.textLabel.numberOfLines = 0;
   return cell;
 }

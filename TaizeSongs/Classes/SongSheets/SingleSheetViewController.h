@@ -10,6 +10,7 @@
 
 @interface SingleSheetViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIScrollView *songSheetScroller;
 @property (strong, nonatomic) IBOutlet UIImageView *songSheetImageDisplay;
 @property (strong, nonatomic) UIImage *selectedSongSheet;
 

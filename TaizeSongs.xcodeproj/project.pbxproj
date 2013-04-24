@@ -161,8 +161,12 @@
 		ED0539AE17040C5100438B63 /* AboutPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0539AD17040C5100438B63 /* AboutPageViewController.m */; };
 		ED0539B117040C5F00438B63 /* SongListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0539B017040C5F00438B63 /* SongListingViewController.m */; };
 		ED0539B417040C7100438B63 /* SongSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0539B317040C7100438B63 /* SongSheetViewController.m */; };
+		ED1947431727D9D900E63578 /* dungeon_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1947401727D9D800E63578 /* dungeon_icon.png */; };
+		ED1947441727D9D900E63578 /* musicnote_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1947411727D9D800E63578 /* musicnote_icon.png */; };
+		ED1947451727D9D900E63578 /* songsheet_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1947421727D9D900E63578 /* songsheet_icon.png */; };
+		ED1947471727EA8500E63578 /* taize_cross_red.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1947461727EA8500E63578 /* taize_cross_red.png */; };
+		ED1947491727EC1F00E63578 /* taize_cross_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1947481727EC1F00E63578 /* taize_cross_yellow.png */; };
 		EDD66B4F1705DF4E0058B3E1 /* taize_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD66B4E1705DF4E0058B3E1 /* taize_cross.png */; };
-		EDD66B551705E4F60058B3E1 /* music_note.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD66B541705E4F60058B3E1 /* music_note.png */; };
 		EDF498771704976000E1F8DA /* SingleSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF498761704976000E1F8DA /* SingleSheetViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -330,8 +334,12 @@
 		ED0539B017040C5F00438B63 /* SongListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListingViewController.m; sourceTree = "<group>"; };
 		ED0539B217040C7100438B63 /* SongSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongSheetViewController.h; sourceTree = "<group>"; };
 		ED0539B317040C7100438B63 /* SongSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongSheetViewController.m; sourceTree = "<group>"; };
+		ED1947401727D9D800E63578 /* dungeon_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dungeon_icon.png; sourceTree = "<group>"; };
+		ED1947411727D9D800E63578 /* musicnote_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicnote_icon.png; sourceTree = "<group>"; };
+		ED1947421727D9D900E63578 /* songsheet_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = songsheet_icon.png; sourceTree = "<group>"; };
+		ED1947461727EA8500E63578 /* taize_cross_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taize_cross_red.png; sourceTree = "<group>"; };
+		ED1947481727EC1F00E63578 /* taize_cross_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taize_cross_yellow.png; sourceTree = "<group>"; };
 		EDD66B4E1705DF4E0058B3E1 /* taize_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taize_cross.png; sourceTree = "<group>"; };
-		EDD66B541705E4F60058B3E1 /* music_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_note.png; sourceTree = "<group>"; };
 		EDF498751704975F00E1F8DA /* SingleSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleSheetViewController.h; sourceTree = "<group>"; };
 		EDF498761704976000E1F8DA /* SingleSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleSheetViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -474,7 +482,6 @@
 		ED05387317040A8C00438B63 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EDD66B541705E4F60058B3E1 /* music_note.png */,
 				ED05387A17040A8C00438B63 /* aber_du_weist.png */,
 				ED05387B17040A8C00438B63 /* ad_te_jesu_c.png */,
 				ED05387C17040A8C00438B63 /* adochr.png */,
@@ -621,8 +628,13 @@
 		ED05387417040A8C00438B63 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				EDD66B4E1705DF4E0058B3E1 /* taize_cross.png */,
+				ED1947401727D9D800E63578 /* dungeon_icon.png */,
+				ED1947411727D9D800E63578 /* musicnote_icon.png */,
+				ED1947421727D9D900E63578 /* songsheet_icon.png */,
+				ED1947461727EA8500E63578 /* taize_cross_red.png */,
+				ED1947481727EC1F00E63578 /* taize_cross_yellow.png */,
 				ED05387517040A8C00438B63 /* taize_banner.jpg */,
+				EDD66B4E1705DF4E0058B3E1 /* taize_cross.png */,
 				ED05387717040A8C00438B63 /* taize_logo.png */,
 			);
 			path = Icons;
@@ -831,7 +843,11 @@
 				ED0539A717040A8C00438B63 /* wait.png in Resources */,
 				ED0539A817040A8C00438B63 /* wyslaw-3.png in Resources */,
 				EDD66B4F1705DF4E0058B3E1 /* taize_cross.png in Resources */,
-				EDD66B551705E4F60058B3E1 /* music_note.png in Resources */,
+				ED1947431727D9D900E63578 /* dungeon_icon.png in Resources */,
+				ED1947441727D9D900E63578 /* musicnote_icon.png in Resources */,
+				ED1947451727D9D900E63578 /* songsheet_icon.png in Resources */,
+				ED1947471727EA8500E63578 /* taize_cross_red.png in Resources */,
+				ED1947491727EC1F00E63578 /* taize_cross_yellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

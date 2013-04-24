@@ -74,7 +74,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJQ-N1-3sD">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Last updated: 29 March 2013 
+                                <string key="text">Last updated: 24 April 2013 
 
 Copyright © Ateliers et Presses de Taizé 
 
@@ -107,19 +107,29 @@ Dungeon Innovations http://www.dungeoninnovations.com/</string>
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="A8x-qq-l7L"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8x-qq-l7L"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cC3-dy-c1R">
+                                <connections>
+                                    <outlet property="delegate" destination="8Fd-NQ-yCX" id="8R0-sd-i3t"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="A8x-qq-l7L" firstAttribute="trailing" secondItem="te4-6s-yEO" secondAttribute="trailing" type="default" id="3XS-Z4-jld"/>
-                            <constraint firstItem="A8x-qq-l7L" firstAttribute="bottom" secondItem="te4-6s-yEO" secondAttribute="bottom" type="default" id="435-ws-YFX"/>
-                            <constraint firstItem="A8x-qq-l7L" firstAttribute="top" secondItem="te4-6s-yEO" secondAttribute="top" type="default" id="Y0e-Vo-mUL"/>
-                            <constraint firstItem="A8x-qq-l7L" firstAttribute="leading" secondItem="te4-6s-yEO" secondAttribute="leading" type="default" id="gCp-ab-knP"/>
+                            <constraint firstItem="A8x-qq-l7L" firstAttribute="trailing" secondItem="te4-6s-yEO" secondAttribute="trailing" type="default" id="07h-oe-nCV"/>
+                            <constraint firstItem="cC3-dy-c1R" firstAttribute="top" secondItem="te4-6s-yEO" secondAttribute="top" type="default" id="1ci-G7-8jL"/>
+                            <constraint firstItem="A8x-qq-l7L" firstAttribute="top" secondItem="te4-6s-yEO" secondAttribute="top" type="default" id="Joj-Ee-ucd"/>
+                            <constraint firstItem="cC3-dy-c1R" firstAttribute="bottom" secondItem="te4-6s-yEO" secondAttribute="bottom" type="default" id="MoE-eG-Sq2"/>
+                            <constraint firstItem="A8x-qq-l7L" firstAttribute="bottom" secondItem="te4-6s-yEO" secondAttribute="bottom" type="default" id="PXA-c3-1VB"/>
+                            <constraint firstItem="cC3-dy-c1R" firstAttribute="trailing" secondItem="te4-6s-yEO" secondAttribute="trailing" type="default" id="aox-f5-zVE"/>
+                            <constraint firstItem="A8x-qq-l7L" firstAttribute="leading" secondItem="te4-6s-yEO" secondAttribute="leading" type="default" id="f85-HX-JYA"/>
+                            <constraint firstItem="cC3-dy-c1R" firstAttribute="leading" secondItem="te4-6s-yEO" secondAttribute="leading" type="default" id="pcv-OP-aaJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Iuo-KL-ZO9"/>
                     <connections>
                         <outlet property="songSheetImageDisplay" destination="A8x-qq-l7L" id="IrR-cc-BRl"/>
+                        <outlet property="songSheetScroller" destination="cC3-dy-c1R" id="Gf6-Gz-cra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WrV-hz-Ndg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -229,6 +239,7 @@ Dungeon Innovations http://www.dungeoninnovations.com/</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleSheetViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="songSheetImageDisplay" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="songSheetScroller" candidateClass="UIScrollView"/>
             </relationships>
         </class>
         <class className="SongListingViewController" superclassName="UIViewController">

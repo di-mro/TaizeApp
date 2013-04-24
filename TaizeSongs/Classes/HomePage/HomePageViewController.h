@@ -11,7 +11,7 @@
 @interface HomePageViewController : UIViewController
 
 @property (nonatomic, retain) NSArray *homePageEntries;
-
+@property (nonatomic, retain) NSArray *homePageIcons;
 
 
 @end
