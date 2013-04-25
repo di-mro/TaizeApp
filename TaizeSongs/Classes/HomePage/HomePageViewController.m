@@ -6,6 +6,9 @@
 //  Copyright (c) 2013 Dungeon Innovations. All rights reserved.
 //
 
+/* First page upon loading the application */
+
+
 #import "HomePageViewController.h"
 
 @interface HomePageViewController ()
@@ -21,7 +24,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
     }
     return self;
@@ -32,6 +36,7 @@
 {
   NSLog(@"Taize Songs - Home Page View");
   
+  //Initialize display entries in Home Page
   homePageEntries = [[NSArray alloc]
                      initWithObjects: @"Song Listing"
                                     , @"About"

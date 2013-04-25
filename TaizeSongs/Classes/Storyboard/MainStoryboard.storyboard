@@ -74,13 +74,6 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJQ-N1-3sD">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Last updated: 24 April 2013 
-
-Copyright © Ateliers et Presses de Taizé 
-
-
-Powered by 
-Dungeon Innovations http://www.dungeoninnovations.com/</string>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -94,6 +87,9 @@ Dungeon Innovations http://www.dungeoninnovations.com/</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="mpS-ew-8km"/>
+                    <connections>
+                        <outlet property="aboutPageTextView" destination="SJQ-N1-3sD" id="tOB-0o-I5c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETc-p2-xcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,6 +224,9 @@ Dungeon Innovations http://www.dungeoninnovations.com/</string>
     <classes>
         <class className="AboutPageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="aboutPageTextView" candidateClass="UITextView"/>
+            </relationships>
         </class>
         <class className="HomePageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HomePageViewController.h"/>

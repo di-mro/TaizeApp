@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Dungeon Innovations. All rights reserved.
 //
 
+/* Displays the page with Alphabet Listing which links them to the songs sheets */
+
 #import "SongListingViewController.h"
 #import "SongSheetViewController.h"
 
@@ -17,6 +19,7 @@
 
 @synthesize songListingPageEntries;
 @synthesize index;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +35,7 @@
 {
   NSLog(@"Taize Songs - Song Listing Page View");
   
+  //Initialize alphabetical listing
   songListingPageEntries = [[NSArray alloc]
                             initWithObjects: @"A" //0
                                            , @"B" //1
@@ -113,7 +117,7 @@
 }
 
 
-#pragma mark - prepare for segue
+#pragma mark - Prepare for segue to Song Sheet Page
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
   if ([segue.identifier isEqualToString:@"songListingToSongSheet"])

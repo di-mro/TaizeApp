@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Dungeon Innovations. All rights reserved.
 //
 
+/* Displays the song sheet image from Taize based on the selected song title */
+
 #import "SingleSheetViewController.h"
 
 @interface SingleSheetViewController ()
@@ -17,6 +19,7 @@
 @synthesize songSheetScroller;
 @synthesize songSheetImageDisplay;
 @synthesize selectedSongSheet;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,8 +34,9 @@
 - (void)viewDidLoad
 {
   NSLog(@"Taize Songs - Song Sheet Image Page View");
-  
   NSLog(@"selectedSongSheet: %@", selectedSongSheet);
+  
+  //Initialize frame for the song sheet image
   CGRect imageFrame = songSheetImageDisplay.frame; //CGRectMake(0, 0, 320, 720);
   imageFrame.size.height = 568;
   imageFrame.size.width = 320;
@@ -45,9 +49,9 @@
   [songSheetScroller addSubview:songSheetImageDisplay];
   [self.view addSubview:songSheetScroller];
   
-  //Zoom
+  //Pinch-to-zoom
   self.songSheetScroller.minimumZoomScale = 0.5;
-  self.songSheetScroller.maximumZoomScale = 5.0; //6.0
+  self.songSheetScroller.maximumZoomScale = 6.0;
   
   [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -60,6 +64,7 @@
 }
 
 
+#pragma mark - Delegate method for pinch-to-zoom in UIScrollView
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
   return self.songSheetImageDisplay;

@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Dungeon Innovations. All rights reserved.
 //
 
+/* Displays the listing of songs per alphabet */
+
 #import "SongSheetViewController.h"
 #import "SingleSheetViewController.h"
 
@@ -20,35 +22,6 @@
 @synthesize songImages;
 @synthesize songSheetImage;
 
-
-/*
-@synthesize aSongEntries;
-@synthesize bSongEntries;
-@synthesize cSongEntries;
-@synthesize dSongEntries;
-@synthesize eSongEntries;
-@synthesize fSongEntries;
-@synthesize gSongEntries;
-@synthesize hSongEntries;
-@synthesize iSongEntries;
-@synthesize jSongEntries;
-@synthesize kSongEntries;
-@synthesize lSongEntries;
-@synthesize mSongEntries;
-@synthesize nSongEntries;
-@synthesize oSongEntries;
-@synthesize pSongEntries;
-@synthesize qSongEntries;
-@synthesize rSongEntries;
-@synthesize sSongEntries;
-@synthesize tSongEntries;
-@synthesize uSongEntries;
-@synthesize vSongEntries;
-@synthesize wSongEntries;
-@synthesize xSongEntries;
-@synthesize ySongEntries;
-@synthesize zSongEntries;
-*/
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -127,6 +100,7 @@
 }
 
 
+#pragma mark - Initialization of songEntries and songImages
 #pragma mark - Songs (A)
 - (void) aSongs
 {
@@ -691,6 +665,7 @@
 
 }
 
+
 #pragma mark - Songs (W)
 - (void) wSongs
 {
@@ -707,6 +682,7 @@
                 , nil];
 
 }
+
 
 #pragma mark - Songs (X)
 - (void) xSongs
@@ -803,7 +779,7 @@
 }
 
 
-#pragma mark - prepare for segue
+#pragma mark - Prepare for segue to Single Sheet View
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
   if ([segue.identifier isEqualToString:@"listingToSheetView"])
