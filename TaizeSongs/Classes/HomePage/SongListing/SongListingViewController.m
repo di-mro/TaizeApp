@@ -101,11 +101,18 @@
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
   
   //configure the cell
-  cell.textLabel.text = [self.songListingPageEntries objectAtIndex:indexPath.row];
+  cell.textLabel.text = [songListingPageEntries objectAtIndex:indexPath.row];
   cell.imageView.image = [UIImage imageNamed:@"taize_cross_red.png"];
   
   cell.textLabel.numberOfLines = 0;
   return cell;
+}
+
+
+//Change the Height of the Cell [Default is 45]:
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
+{
+  return 70;
 }
 
 

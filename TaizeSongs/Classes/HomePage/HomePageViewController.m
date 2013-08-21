@@ -68,7 +68,7 @@
 
 - (NSString *) tableView:(UITableView *) tableView titleForHeaderInSection:(NSInteger)section
 {
-  NSString *myTitle = [[NSString alloc] initWithFormat:@"Menu"];
+  NSString *myTitle = [[NSString alloc] initWithFormat:@""];
   return myTitle;
 }
 
@@ -90,6 +90,13 @@
   
   cell.textLabel.numberOfLines = 0;
   return cell;
+}
+
+
+//Change the Height of the Cell [Default is 45]:
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
+{
+  return 70;
 }
 
 
