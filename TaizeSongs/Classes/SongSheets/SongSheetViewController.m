@@ -688,15 +688,9 @@
 - (void) xSongs
 {
   self.navigationItem.title = @"X";
-  songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @""
-                 , @""
-                 , nil];
+  songEntries = [[NSMutableArray alloc] init];
   
-  songImages = [[NSMutableArray alloc]
-                initWithObjects:
-                @""
-                , nil];
+  songImages = [[NSMutableArray alloc] init];
 }
 
 
@@ -704,15 +698,9 @@
 - (void) ySongs
 {
   self.navigationItem.title = @"Y";
-  songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @""
-                 , @""
-                 , nil];
+  songEntries = [[NSMutableArray alloc] init];
   
-  songImages = [[NSMutableArray alloc]
-                initWithObjects:
-                @""
-                , nil];
+  songImages = [[NSMutableArray alloc] init];
 }
 
 
@@ -720,15 +708,9 @@
 - (void) zSongs
 {
   self.navigationItem.title = @"Z";
-  songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @""
-                 , @""
-                 , nil];
+  songEntries = [[NSMutableArray alloc] init];
   
-  songImages = [[NSMutableArray alloc]
-                initWithObjects:
-                @""
-                , nil];
+  songImages = [[NSMutableArray alloc] init];
 }
 
 

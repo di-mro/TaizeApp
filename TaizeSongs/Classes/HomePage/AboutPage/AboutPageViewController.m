@@ -35,7 +35,7 @@
   NSLog(@"Taize Songs - About Page View");
   
   //Last update date of songs in repertory
-  lastUpdateDate = @"25 April 2013";
+  lastUpdateDate = @"22 August 2013";
   
   //Formatted string display for About Page
   NSString *aboutPageText = [NSString stringWithFormat:@"Last updated: %@ \n\nCopyright © Ateliers et Presses de Taizé \n\n\nPowered by \nDungeon Innovations\nhttp://www.dungeoninnovations.com/", lastUpdateDate];
