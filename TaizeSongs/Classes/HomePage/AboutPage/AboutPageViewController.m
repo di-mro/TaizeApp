@@ -25,7 +25,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        // Custom initialization
     }
     return self;
 }
@@ -35,10 +34,12 @@
   NSLog(@"Taize Songs - About Page View");
   
   //Last update date of songs in repertory
-  lastUpdateDate = @"22 August 2013";
+  lastUpdateDate = @"24 August 2013";
   
   //Formatted string display for About Page
-  NSString *aboutPageText = [NSString stringWithFormat:@"Last updated: %@ \n\nCopyright © Ateliers et Presses de Taizé \n\n\nPowered by \nDungeon Innovations\nhttp://www.dungeoninnovations.com/", lastUpdateDate];
+  NSString *aboutPageText = [NSString stringWithFormat:
+                             @"Last updated: %@ \n\nCopyright © Ateliers et Presses de Taizé \n\n\nPowered by \nDungeon Innovations\nhttp://www.dungeoninnovations.com/"
+                             , lastUpdateDate];
   
   aboutPageTextView.text = aboutPageText;
 
@@ -51,5 +52,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

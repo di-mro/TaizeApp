@@ -26,7 +26,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        // Custom initialization
     }
     return self;
 }
@@ -79,7 +78,6 @@
 #pragma mark - Table view data source implementation
 - (NSInteger) numberOfSectionsInTableView:(UITableView *) tableView
 {
-  //Return the number of sections.
   return 1;
 }
 
@@ -91,7 +89,6 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  //Return the number of rows in the section
   return [songListingPageEntries count];
 }
 
@@ -101,10 +98,10 @@
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
   
   //configure the cell
-  cell.textLabel.text = [songListingPageEntries objectAtIndex:indexPath.row];
-  cell.imageView.image = [UIImage imageNamed:@"taize_cross_red.png"];
-  
+  cell.textLabel.text          = [songListingPageEntries objectAtIndex:indexPath.row];
+  cell.imageView.image         = [UIImage imageNamed:@"taize_cross_red.png"];
   cell.textLabel.numberOfLines = 0;
+  
   return cell;
 }
 
@@ -130,6 +127,7 @@
   if ([segue.identifier isEqualToString:@"songListingToSongSheet"])
   {
     NSLog(@"prepare for segue - index: %d", index);
+    
     SongSheetViewController *destViewController = segue.destinationViewController;
     destViewController.index = index;
   }

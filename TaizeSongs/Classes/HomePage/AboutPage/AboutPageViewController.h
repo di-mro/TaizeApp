@@ -13,4 +13,5 @@
 @property (strong, nonatomic) IBOutlet UITextView *aboutPageTextView;
 @property (strong, nonatomic) NSString *lastUpdateDate;
 
+
 @end
